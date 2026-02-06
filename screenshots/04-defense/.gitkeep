@@ -1,1 +1,8 @@
+wazuh-alerts.png
+With this part of the Homelab I'm now defending my homelab. In the real world I would remediate and investigate/isolate the host. This also shows that I can track malicious activity in my network and build a footprint of an overview of what happens during the attack chain to see what the attacker has done. I did this through the alerting, finding alerts, deploying them, adding triggers and investigating malicious activity that is occurring. As I'm back on the Wazuh localhost in my project-x-sec-box I check alerts box and see a few alerts that have been triggered. If I go to the alerts and click one of them I can see when the alert was triggered and how it was triggered and if I click on the icon I can choose to acknowledge it
 
+event-4624-analysis.png
+With the discover tab I can see different logging information, example I show you with WinRM I go to the edit side and go to the 'Query Section' to find the data filter which shows as 'data.win.system.eventID is 4624'. In the discovery page I search up 'data.win.system.eventID: 4624', it shows the alerts of the last 7 days and it shows a huge amount of different logins happening. I can research more to see what really happened here
+
+log-forensics.png
+With secrets.txt the logs I generated I can see more on the full_log archive to see what is happening and see what the user modified. I can also see that the username is Administrators
