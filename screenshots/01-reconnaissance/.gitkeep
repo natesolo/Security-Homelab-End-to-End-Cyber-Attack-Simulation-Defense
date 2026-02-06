@@ -1,1 +1,14 @@
+nmap-scan.png
+This is a tool called nmap to open ports and services running on servers and systems, this is a scan for the ip address of the business network
 
+hydra-bruteforce.png
+We use the hydra command and root due to it being the default username. Shows the host, login and password. I used those credentials and am now able to login to the selected use
+
+phishing-email.png
+Viewing phishing email on the email client its on the hr client and targeting that email address
+
+captured-creds.png
+I now have a new file called creds.log and when I verify it this shows the username and password. After doing that we can now see the linux-client's username and password doing a cat creds.log
+
+linux-client-access.png
+And now we can log into the linux-client's account onto the project-x-attacker's command prompt
