@@ -20,3 +20,19 @@ Attack Tools: Nmap, Hydra, Evil-WinRM, Netexec, XFreeRDP
 Defense Tools: Wazuh SIEM
 Services: MailHog SMTP, Apache2, WinRM, RDP
 Protocols: SSH, SMTP, WinRM, RDP, SCP
+
+ Ethical Disclaimer
+This project was conducted in a controlled, isolated lab environment for educational purposes only. All systems were personally owned and configured specifically for security research and training.
+Important: Unauthorized access to computer systems is illegal. This demonstration is intended to:
+
+Educate on offensive and defensive cybersecurity techniques
+Showcase practical security skills for portfolio purposes
+Highlight the importance of proper security controls
+
+Never attempt these techniques on systems you do not own or have explicit permission to test.
+🔗 Resources & Credits
+
+Project Inspiration: projectsecurity.io by Grant Collins
+Phishing Templates: collinsmc23 on GitHub
+MITRE ATT&CK Framework: attack.mitre.org
+Tools: Kali Linux, Wazuh, Nmap, Hydra, Evil-WinRM, Netexec
