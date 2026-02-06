@@ -1,1 +1,8 @@
+netexec-spray.png
+I now use netexec cool tool that is used for password spraying which is the same thing as brute force attempt. This takes a list of usernames and passwords. I then start to create an emulated environment that will create the username and password lists starting with sudo nano users.txt with the password. I add in with the username. Then I do sudo nano pass.txt to place my password. I then run the nxc winrm with the windows client ip address, I target the windows workstation"
 
+evil-winrm-session.png
+Set up evil-winrm which shows an open source tool to automate the process of brute forcing, it can also take in an ip address with the username and password, after doing that I now have a powershell terminal which grants me access to the administrator on the windows client. This accomplishes lateral movement of moving it from our Linux machine to our windows machine
+
+domain-admin-access.png
+I have a terminal session and I can see what part of the workstation this belongs to and I have corp.project-x-dc.com
