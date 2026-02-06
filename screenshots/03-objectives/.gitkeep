@@ -1,1 +1,16 @@
+rdp-domain-controller.png
+I then do a nmap on the attacker terminal with the domain controller, I see 3389 this is an RDP - remote desktop protocol which allows me to sign into my domain and remotely administrate it with a UI. Lets see if I can access the domain controller with rdp. I used a command package xfreerdp to target my domain. Im now on the system
+
+scp-exfiltration.png
+I will start by exfiltrating this file but I won't just sign into this personal account on a compromised system as this would lead to a footprint for the blue hat defenders to find me. So I will start by using a simple SCP - Secure Copy Utilities which allows me to copy one machine to other over the ssh protocol. So I go to a new terminal in the win-client page and cd into the documents and production files and type the file name with its ip address. And now my attacker virtual machine has the sensitive file!
+
+backdoor-account.png
+Now I will create a local account to place persistence techniques and to be sure that I can get back to where I was after. And now I'm going to create a new user on the linux-client virtual machine. Add it to the local administrator group. And add it to domain admins. Now When I do a /domain I can see that it's part of administrators and domain users. I can also change the password too
+
+scheduled-task.png
+I will create a reverse shell to get access to my machine in case I lose access and a scheduled task will be sent in place to run the reverse shell often. I go into 1.0.0.50:8000 to find the reverse shell from the attacker machine into my domain controller here in win-client. I then download the reverse.psl. Were going to create a scheduled task to allow me to run a specific script which is reverse(1).ps1. To find the file I downloaded I go to this pc click on hidden items, AppData, Local, Microsoft, Windows and copy the reverse file. I then paste this file in a new terminal and what it does is it creates a new task called PersistenceTask and it runs everyday at 12:00
+
+reverse-shell.png
+I then place the reverse file to run and in my kali linux machine a reverse shell is connected and running. This shows that I have placed persistence through a local account and added administrative and local groups including domain admin group and also created a schedule task that allows me to catch a reverse shell at 12:00 everyday
+
 
