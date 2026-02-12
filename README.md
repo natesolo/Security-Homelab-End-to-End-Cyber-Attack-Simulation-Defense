@@ -15,7 +15,7 @@ Security Monitoring - Wazuh SIEM watching for attacks
 
 Why this matters: This mirrors a real company network, not just toy examples.
 
-📖 The Attack Story
+The Attack Story
 Step 1: Reconnaissance - "Who's on the network?"
 What I did: Scanned the network to find computers and see what services were running
 Tool used: Nmap
